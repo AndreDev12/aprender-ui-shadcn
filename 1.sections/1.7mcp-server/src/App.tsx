@@ -16,10 +16,8 @@ import {
 
 function App() {
   return (
-    <>
-      <div className="flex min-h-svh flex-col items-center justify-center">
-        <Button>Click me</Button>
-      </div>
+    <main className="flex min-h-svh flex-col items-center justify-center gap-8">
+      <Button>Click me</Button>
 
       <Dialog>
         <DialogTrigger asChild>
@@ -52,17 +50,15 @@ function App() {
         </DialogContent>
       </Dialog>
 
-      <div className="flex flex-col items-center gap-4">
-        <p className="text-sm text-muted-foreground">
-          Use{' '}
-          <KbdGroup>
-            <Kbd>Ctrl + B</Kbd>
-            <Kbd>Ctrl + K</Kbd>
-          </KbdGroup>{' '}
-          to open the command palette
-        </p>
-      </div>
-    </>
+      <p className="text-sm text-muted-foreground">
+        Use{' '}
+        <KbdGroup>
+          <Kbd>Ctrl + B</Kbd>
+          <Kbd>Ctrl + K</Kbd>
+        </KbdGroup>{' '}
+        to open the command palette
+      </p>
+    </main>
   );
 }
 
